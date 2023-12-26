@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'ferrum'
+gem "ferrum", "~> 0.14"

@@ -1,9 +1,13 @@
-FROM ruby:3.2
+FROM ruby:3-alpine
 
 WORKDIR /app
 
-RUN apt-get update -qq && \
-    apt-get install -y chromium
+RUN apk update && \
+  apk add --no-cache \
+    build-base \
+    chromium \
+    make && \
+  rm -rf /var/cache/apk/*
 
 COPY Gemfile* ./
 RUN bundle install

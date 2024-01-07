@@ -1,5 +1,7 @@
 FROM ruby:3-alpine
 
+ENV RUBY_YJIT_ENABLE=1
+
 WORKDIR /app
 
 RUN apk update && \

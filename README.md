@@ -11,5 +11,5 @@ $ docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t pollen 
 ## Run
 
 ```sh
-$ docker run --env PLZ='74072' --rm -v ${PWD}:/app -w /app pollen
+$ docker run --env PLZ='55218' --rm -v ${PWD}:/app -w /app pollen
 ```
